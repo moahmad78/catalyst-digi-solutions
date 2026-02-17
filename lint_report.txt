@@ -1,0 +1,203 @@
+
+> catalyst-digi@0.1.0 lint
+> eslint
+
+
+D:\catalyst-digi\app\about\page.tsx
+   71:66   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+   71:91   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  117:29   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  117:276  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\app\consulting\page.tsx
+    8:49   warning  'TrendingUp' is defined but never used                           @typescript-eslint/no-unused-vars
+    8:61   warning  'Zap' is defined but never used                                  @typescript-eslint/no-unused-vars
+    9:27   warning  'ShoppingBag' is defined but never used                          @typescript-eslint/no-unused-vars
+    9:40   warning  'Briefcase' is defined but never used                            @typescript-eslint/no-unused-vars
+    9:51   warning  'Factory' is defined but never used                              @typescript-eslint/no-unused-vars
+  316:98   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  318:102  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  352:42   error    Unexpected any. Specify a different type                         @typescript-eslint/no-explicit-any
+
+D:\catalyst-digi\app\contact\page.tsx
+  30:36  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\app\internship\[slug]\page.tsx
+   4:8   warning  'Image' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+  13:11  warning  'router' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  29:9   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\catalyst-digi\app\internship\[slug]\page.tsx:29:9
+  27 |     useEffect(() => {
+  28 |         window.scrollTo(0, 0);
+> 29 |         setIsSidebarOpen(false);
+     |         ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  30 |     }, [slug]);
+  31 |
+  32 |     if (!course) {  react-hooks/set-state-in-effect
+  48:15  warning  'data' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\app\internship\page.tsx
+    5:44  warning  'CheckCircle' is defined but never used                          @typescript-eslint/no-unused-vars
+    5:57  warning  'Loader2' is defined but never used                              @typescript-eslint/no-unused-vars
+    6:8   warning  'Image' is defined but never used                                @typescript-eslint/no-unused-vars
+    7:8   warning  'Link' is defined but never used                                 @typescript-eslint/no-unused-vars
+   14:12  warning  'submitting' is assigned a value but never used                  @typescript-eslint/no-unused-vars
+   15:12  warning  'success' is assigned a value but never used                     @typescript-eslint/no-unused-vars
+   25:11  warning  'domains' is assigned a value but never used                     @typescript-eslint/no-unused-vars
+   52:11  warning  'partners' is assigned a value but never used                    @typescript-eslint/no-unused-vars
+   58:11  warning  'handleSubmit' is assigned a value but never used                @typescript-eslint/no-unused-vars
+   64:15  warning  'data' is assigned a value but never used                        @typescript-eslint/no-unused-vars
+   95:32  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  216:36  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\app\legal\faq\page.tsx
+  7:10  warning  'Button' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\app\legal\privacy-policy\page.tsx
+  50:45  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  50:53  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\app\legal\terms\page.tsx
+  27:65  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  27:78  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\app\page.tsx
+    3:18   warning  'useScroll' is defined but never used                            @typescript-eslint/no-unused-vars
+    3:54   warning  'AnimatePresence' is defined but never used                      @typescript-eslint/no-unused-vars
+    7:8    warning  'HiringPartners' is defined but never used                       @typescript-eslint/no-unused-vars
+   14:22   warning  'BarChart' is defined but never used                             @typescript-eslint/no-unused-vars
+   14:38   warning  'Users' is defined but never used                                @typescript-eslint/no-unused-vars
+   14:120  warning  'Star' is defined but never used                                 @typescript-eslint/no-unused-vars
+   14:133  warning  'TrendingUp' is defined but never used                           @typescript-eslint/no-unused-vars
+   14:145  warning  'MonitorSmartphone' is defined but never used                    @typescript-eslint/no-unused-vars
+   14:164  warning  'Database' is defined but never used                             @typescript-eslint/no-unused-vars
+   14:174  warning  'FileText' is defined but never used                             @typescript-eslint/no-unused-vars
+   14:184  warning  'Laptop' is defined but never used                               @typescript-eslint/no-unused-vars
+  159:25   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  440:18   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  549:73   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  549:81   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  572:7    warning  'GlassServiceCard' is assigned a value but never used            @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\app\portfolio\[id]\page.tsx
+  338:28  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\app\portfolio\page.tsx
+  7:22  warning  'ExternalLink' is defined but never used  @typescript-eslint/no-unused-vars
+  7:36  warning  'Github' is defined but never used        @typescript-eslint/no-unused-vars
+  7:44  warning  'Globe' is defined but never used         @typescript-eslint/no-unused-vars
+  7:51  warning  'Smartphone' is defined but never used    @typescript-eslint/no-unused-vars
+  7:63  warning  'BarChart' is defined but never used      @typescript-eslint/no-unused-vars
+  7:73  warning  'Database' is defined but never used      @typescript-eslint/no-unused-vars
+  7:83  warning  'Layout' is defined but never used        @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\app\solutions\app-development\page.tsx
+  4:42  warning  'Code2' is defined but never used   @typescript-eslint/no-unused-vars
+  4:49  warning  'Layers' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\app\solutions\digital-marketing\page.tsx
+   4:38  warning  'BarChart' is defined but never used                             @typescript-eslint/no-unused-vars
+   4:48  warning  'Globe' is defined but never used                                @typescript-eslint/no-unused-vars
+  38:39  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\app\solutions\digital-transformations\page.tsx
+  4:36  warning  'Target' is defined but never used      @typescript-eslint/no-unused-vars
+  4:54  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\app\solutions\record-management\page.tsx
+   4:43  warning  'Lock' is defined but never used                                 @typescript-eslint/no-unused-vars
+   4:61  warning  'Server' is defined but never used                               @typescript-eslint/no-unused-vars
+  38:60  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\app\training\[slug]\page.tsx
+   10:10  warning  'CheckCircle2' is defined but never used                         @typescript-eslint/no-unused-vars
+   10:62  warning  'Users' is defined but never used                                @typescript-eslint/no-unused-vars
+  133:45  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  133:75  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  139:42  error    'Briefcase' is not defined                                       react/jsx-no-undef
+
+D:\catalyst-digi\app\training\digital-marketing\page.tsx
+  4:22  warning  'Megaphone' is defined but never used  @typescript-eslint/no-unused-vars
+  4:45  warning  'Users' is defined but never used      @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\app\training\software\page.tsx
+  4:22  warning  'Code' is defined but never used      @typescript-eslint/no-unused-vars
+  4:28  warning  'Code2' is defined but never used     @typescript-eslint/no-unused-vars
+  4:35  warning  'Database' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\app\training\virtual-office\page.tsx
+  4:22  warning  'CheckCircle2' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\components\BookingModal.tsx
+   5:19  warning  'Mail' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+   5:91  warning  'Phone' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  38:13  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\catalyst-digi\components\BookingModal.tsx:38:13
+  36 |     useEffect(() => {
+  37 |         if (isOpen) {
+> 38 |             setStep(1);
+     |             ^^^^^^^ Avoid calling setState() directly within an effect
+  39 |             setIsSuccess(false);
+  40 |             setIsLoading(false);
+  41 |             setResume(null);  react-hooks/set-state-in-effect
+
+D:\catalyst-digi\components\ConsultingInquiryForm.tsx
+  4:45  warning  'AlertCircle' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\components\HiringPartners.tsx
+  67:146  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\components\ServiceSidebar.tsx
+  45:79  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\components\SuccessStories.tsx
+  105:41  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  105:55  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+D:\catalyst-digi\components\WhatsAppButton.tsx
+  4:10  warning  'MessageCircle' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\components\ui\Navbar.tsx
+  27:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\catalyst-digi\components\ui\Navbar.tsx:27:5
+  25 |   // Close mobile menu on route change
+  26 |   useEffect(() => {
+> 27 |     setIsMobileMenuOpen(false);
+     |     ^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  28 |     setActiveDropdown(null);
+  29 |   }, [pathname]);
+  30 |  react-hooks/set-state-in-effect
+
+D:\catalyst-digi\lib\consulting-data.ts
+  1:10  warning  'Component' is defined but never used    @typescript-eslint/no-unused-vars
+  1:43  warning  'TrendingUp' is defined but never used   @typescript-eslint/no-unused-vars
+  1:62  warning  'ShieldCheck' is defined but never used  @typescript-eslint/no-unused-vars
+  1:75  warning  'PieChart' is defined but never used     @typescript-eslint/no-unused-vars
+
+D:\catalyst-digi\lib\training-data.ts
+  14:11  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  18:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+✖ 95 problems (33 errors, 62 warnings)
+
