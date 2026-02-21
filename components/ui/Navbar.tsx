@@ -43,9 +43,18 @@ const Navbar = () => {
       href: "#",
       dropdown: [
         { name: "Digital Marketing", href: "/solutions/digital-marketing" },
-        { name: "App Development", href: "/solutions/app-development" },
-        { name: "Record Management", href: "/solutions/record-management" },
+        { name: "Digital Transformations", href: "/solutions/digital-transformation" },
+        { name: "Data Management", href: "/solutions/record-management" },
       ],
+    },
+    {
+      name: "Training",
+      href: "#",
+      dropdown: [
+        { name: "Virtual Office Trainings", href: "/training/virtual-office-trainings" },
+        { name: "Software Training", href: "/training/software-training" },
+        { name: "Digital Marketing Training", href: "/training/digital-marketing" }
+      ]
     },
     { name: "Internship", href: "/internship" },
     { name: "Portfolio", href: "/portfolio" },

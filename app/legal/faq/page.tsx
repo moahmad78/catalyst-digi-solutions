@@ -17,7 +17,7 @@ const faqData = [
             },
             {
                 q: "What services do you offer?",
-                a: "We specialize in Digital Marketing (SEO, Social Media), Custom App Development (Web & Mobile), Record Management (Digitization & Security), and Corporate Training/Internships."
+                a: "We specialize in Digital Marketing (SEO, Social Media), Digital Transformations (Web & Mobile, ERP), Data Management (Digitization & Security), and Corporate Training/Internships."
             }
         ]
     },
@@ -35,10 +35,10 @@ const faqData = [
         ]
     },
     {
-        category: "Security (Record Management)",
+        category: "Security (Data Management)",
         questions: [
             {
-                q: "How secure is my data in Record Management?",
+                q: "How secure is my data in Data Management?",
                 a: "Data security is our top priority. We follow advanced security protocols, including AES-256 encryption, role-based access controls, and strict digitization standards to ensure 100% data integrity and confidentiality."
             }
         ]

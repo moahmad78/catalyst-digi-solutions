@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" });
 
 export const metadata: Metadata = {
-  title: "Catalyst Digi Solutions | Digital Marketing, App Dev & Record Management",
+  title: "Catalyst Digi Solutions | Digital Marketing, Digital Transformations & Data Management",
   description: "Transforming businesses with cutting-edge digital solutions. Web Development, SEO, Branding, and Professional Training in Mangalore. Contact: +91 9880664435",
   authors: [{ name: "Sahil Sheikh", url: "https://www.instagram.com/sahil_sheikh78/" }, { name: "Darshan PV", url: "https://www.linkedin.com/in/darshanpv" }],
   creator: "Sahil Sheikh",
-  keywords: ["Digital Marketing Mangalore", "Software Internship", "Record Management India", "Catalyst Digi", "Web Development Mangalore", "Corporate Training India"],
+  keywords: ["Digital Marketing Mangalore", "Software Internship", "Data Management India", "Catalyst Digi", "Digital Transformation Mangalore", "Corporate Training India"],
   icons: {
     icon: "/fevi.png",
     shortcut: "/fevi.png",

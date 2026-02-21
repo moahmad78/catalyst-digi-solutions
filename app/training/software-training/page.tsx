@@ -1,15 +1,15 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import { Megaphone, TrendingUp, Search, Mail, PlayCircle, BookOpen, SlidersHorizontal, GraduationCap } from 'lucide-react';
+import { Laptop, Code2, Briefcase, PlayCircle, BookOpen, SlidersHorizontal, GraduationCap } from 'lucide-react';
 import * as motion from 'framer-motion/client';
 import TrainingSidebar from '@/components/TrainingSidebar';
 
 export const metadata: Metadata = {
-    title: 'Digital Marketing Training | Catalyst Digi',
-    description: 'Master SEO, Social Media, and PPC. Learn to create data-driven marketing campaigns.',
+    title: 'Software Development Training | Catalyst Digi',
+    description: 'Learn modern full-stack development. React, Next.js, Node.js, and more.',
 };
 
-export default function DigitalMarketingTrainingPage() {
+export default function SoftwareTrainingPage() {
     const fadeIn = {
         initial: { opacity: 0, y: 20 },
         animate: { opacity: 1, y: 0 },
@@ -37,8 +37,8 @@ export default function DigitalMarketingTrainingPage() {
                             className="relative h-[400px] rounded-3xl overflow-hidden border border-white/10"
                         >
                             <Image
-                                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2670&auto=format&fit=crop"
-                                alt="Marketing Analytics"
+                                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2670&auto=format&fit=crop"
+                                alt="Coding Bootcamp"
                                 fill
                                 className="object-cover"
                                 priority
@@ -63,7 +63,7 @@ export default function DigitalMarketingTrainingPage() {
                             className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm"
                         >
                             <p className="text-slate-300 leading-relaxed text-lg">
-                                &quot;Empower your brand with our tailored digital marketing strategies, meticulously crafted by our experts to deliver tangible results and elevate your ROI. Explore our core offerings designed to drive success and amplify your brand's impact in the digital land.&quot;
+                                &quot;Join our program for practical, hands-on experience with the latest technologies. Led by experts, our interactive sessions prioritize real-world application, ensuring you gain valuable skills for your career.&quot;
                             </p>
                         </motion.div>
 
@@ -94,38 +94,30 @@ export default function DigitalMarketingTrainingPage() {
                             initial="initial"
                             whileInView="animate"
                             viewport={{ once: true, margin: "-100px" }}
-                            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                            className="grid grid-cols-1 md:grid-cols-3 gap-6"
                         >
                             <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
-                                <div className="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center text-pink-400 mb-4 group-hover:scale-110 transition-transform">
-                                    <TrendingUp className="w-6 h-6" />
-                                </div>
-                                <h3 className="text-lg font-bold text-white mb-2">Digital Marketing</h3>
-                                <p className="text-slate-400 text-sm">Essential digital marketing strategies.</p>
-                            </motion.div>
-
-                            <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
-                                <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 mb-4 group-hover:scale-110 transition-transform">
-                                    <Megaphone className="w-6 h-6" />
-                                </div>
-                                <h3 className="text-lg font-bold text-white mb-2">Social Media</h3>
-                                <p className="text-slate-400 text-sm">Social Media Marketing.</p>
-                            </motion.div>
-
-                            <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
                                 <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
-                                    <Search className="w-6 h-6" />
+                                    <Laptop className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-lg font-bold text-white mb-2">SEO</h3>
-                                <p className="text-slate-400 text-sm">Search Engine Optimization.</p>
+                                <h3 className="text-lg font-bold text-white mb-2">Hands-on Practice</h3>
+                                <p className="text-slate-400 text-sm">Practical experience with the latest technologies.</p>
                             </motion.div>
 
                             <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
-                                <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 transition-transform">
-                                    <Mail className="w-6 h-6" />
+                                <div className="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center text-cyan-400 mb-4 group-hover:scale-110 transition-transform">
+                                    <Code2 className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-lg font-bold text-white mb-2">Email Marketing</h3>
-                                <p className="text-slate-400 text-sm">Targeted Email campaigns.</p>
+                                <h3 className="text-lg font-bold text-white mb-2">Expert-led Instruction</h3>
+                                <p className="text-slate-400 text-sm">Interactive sessions prioritizing real-world application.</p>
+                            </motion.div>
+
+                            <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
+                                <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center text-green-400 mb-4 group-hover:scale-110 transition-transform">
+                                    <Briefcase className="w-6 h-6" />
+                                </div>
+                                <h3 className="text-lg font-bold text-white mb-2">Career Support</h3>
+                                <p className="text-slate-400 text-sm">Gain valuable skills for your career advancement.</p>
                             </motion.div>
                         </motion.div>
 

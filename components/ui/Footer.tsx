@@ -17,7 +17,7 @@ const Footer = () => {
                             Empowering businesses with ROI-based Digital Marketing, Custom App Development, and Corporate Training solutions.
                         </p>
                         <div className="flex gap-4">
-                            <Link href="https://www.linkedin.com/in/darshanpv" target="_blank" className="p-3 bg-white/5 border border-white/10 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 hover:border-primary/50 transition-all hover:scale-110 hover:shadow-[0_0_15px_rgba(124,58,237,0.3)]">
+                            <Link href="https://www.linkedin.com/company/catalyst-digi-solutions/" target="_blank" className="p-3 bg-white/5 border border-white/10 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 hover:border-primary/50 transition-all hover:scale-110 hover:shadow-[0_0_15px_rgba(124,58,237,0.3)]">
                                 <Linkedin className="w-5 h-5" />
                             </Link>
                             <Link href="https://www.instagram.com/darshanpv" target="_blank" className="p-3 bg-white/5 border border-white/10 rounded-xl text-slate-400 hover:text-white hover:bg-white/10 hover:border-pink-500/50 transition-all hover:scale-110 hover:shadow-[0_0_15px_rgba(236,72,153,0.3)]">
@@ -34,30 +34,26 @@ const Footer = () => {
 
                     {/* Quick Links */}
                     <div className="flex flex-col items-center md:items-start text-center md:text-left">
-                        <h3 className="text-lg font-semibold text-foreground mb-4">Quick Links</h3>
-                        <ul className="space-y-2">
-                            <li>
-                                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                                    About Us
-                                </Link>
-                            </li>
+                        <h3 className="text-lg font-semibold text-foreground mb-4">Digital Solutions</h3>
+                        <ul className="space-y-2 mb-8">
                             <li>
                                 <Link href="/solutions/digital-marketing" className="text-muted-foreground hover:text-primary transition-colors text-sm">
                                     Digital Marketing
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/training/software" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                                    Software Training
+                                <Link href="/solutions/digital-transformation" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                                    Digital Transformations
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors text-sm">
-                                    Contact Us
+                                <Link href="/solutions/record-management" className="text-muted-foreground hover:text-primary transition-colors text-sm">
+                                    Data Management
                                 </Link>
                             </li>
-
                         </ul>
+
+
                     </div>
 
                     {/* Legal & Support */}

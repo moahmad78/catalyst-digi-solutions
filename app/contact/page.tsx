@@ -230,7 +230,7 @@ export default function ContactPage() {
                                                     <select className="w-full bg-black/40 border border-white/10 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white focus:outline-none focus:border-primary focus:bg-black/60 transition-all appearance-none cursor-pointer font-medium">
                                                         <option value="" disabled selected>Select Domain</option>
                                                         <option value="web" className="bg-slate-900">Web Development</option>
-                                                        <option value="app" className="bg-slate-900">App Development</option>
+                                                        <option value="app" className="bg-slate-900">Digital Transformations</option>
                                                         <option value="design" className="bg-slate-900">UI/UX Design</option>
                                                         <option value="marketing" className="bg-slate-900">Digital Marketing</option>
                                                     </select>
@@ -263,8 +263,8 @@ export default function ContactPage() {
                                                     <select className="w-full bg-black/40 border border-white/10 rounded-xl pl-10 pr-4 py-2.5 text-sm text-white focus:outline-none focus:border-primary focus:bg-black/60 transition-all appearance-none cursor-pointer font-medium">
                                                         <option value="" disabled selected>Select Service</option>
                                                         <option value="marketing" className="bg-slate-900">Digital Marketing</option>
-                                                        <option value="app" className="bg-slate-900">App Development</option>
-                                                        <option value="records" className="bg-slate-900">Record Management</option>
+                                                        <option value="app" className="bg-slate-900">Digital Transformations</option>
+                                                        <option value="records" className="bg-slate-900">Data Management</option>
                                                         <option value="consulting" className="bg-slate-900">Consulting</option>
                                                     </select>
                                                 </div>

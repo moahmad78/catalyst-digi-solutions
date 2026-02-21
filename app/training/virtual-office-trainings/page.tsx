@@ -1,15 +1,15 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import { Megaphone, TrendingUp, Search, Mail, PlayCircle, BookOpen, SlidersHorizontal, GraduationCap } from 'lucide-react';
+import { Monitor, Settings, Calendar, PlayCircle, BookOpen, SlidersHorizontal, GraduationCap } from 'lucide-react';
 import * as motion from 'framer-motion/client';
 import TrainingSidebar from '@/components/TrainingSidebar';
 
 export const metadata: Metadata = {
-    title: 'Digital Marketing Training | Catalyst Digi',
-    description: 'Master SEO, Social Media, and PPC. Learn to create data-driven marketing campaigns.',
+    title: 'Virtual Office Training | Catalyst Digi',
+    description: 'Master remote work tools and virtual office management.',
 };
 
-export default function DigitalMarketingTrainingPage() {
+export default function VirtualOfficeTrainingPage() {
     const fadeIn = {
         initial: { opacity: 0, y: 20 },
         animate: { opacity: 1, y: 0 },
@@ -37,8 +37,8 @@ export default function DigitalMarketingTrainingPage() {
                             className="relative h-[400px] rounded-3xl overflow-hidden border border-white/10"
                         >
                             <Image
-                                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2670&auto=format&fit=crop"
-                                alt="Marketing Analytics"
+                                src="https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?q=80&w=2664&auto=format&fit=crop"
+                                alt="Virtual Office Training"
                                 fill
                                 className="object-cover"
                                 priority
@@ -63,7 +63,7 @@ export default function DigitalMarketingTrainingPage() {
                             className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm"
                         >
                             <p className="text-slate-300 leading-relaxed text-lg">
-                                &quot;Empower your brand with our tailored digital marketing strategies, meticulously crafted by our experts to deliver tangible results and elevate your ROI. Explore our core offerings designed to drive success and amplify your brand's impact in the digital land.&quot;
+                                &quot;Experience interactive sessions led by industry professionals, minimizing theory and maximizing hands-on practice. Gain practical skills and become an expert in your field, all while enjoying flexible scheduling and personalized support.&quot;
                             </p>
                         </motion.div>
 
@@ -94,38 +94,30 @@ export default function DigitalMarketingTrainingPage() {
                             initial="initial"
                             whileInView="animate"
                             viewport={{ once: true, margin: "-100px" }}
-                            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+                            className="grid grid-cols-1 md:grid-cols-3 gap-6"
                         >
                             <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
-                                <div className="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center text-pink-400 mb-4 group-hover:scale-110 transition-transform">
-                                    <TrendingUp className="w-6 h-6" />
+                                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
+                                    <Monitor className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-lg font-bold text-white mb-2">Digital Marketing</h3>
-                                <p className="text-slate-400 text-sm">Essential digital marketing strategies.</p>
+                                <h3 className="text-lg font-bold text-white mb-2">Interactive Sessions</h3>
+                                <p className="text-slate-400 text-sm">Led by industry professionals.</p>
                             </motion.div>
 
                             <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
                                 <div className="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 mb-4 group-hover:scale-110 transition-transform">
-                                    <Megaphone className="w-6 h-6" />
+                                    <Settings className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-lg font-bold text-white mb-2">Social Media</h3>
-                                <p className="text-slate-400 text-sm">Social Media Marketing.</p>
-                            </motion.div>
-
-                            <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
-                                <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 mb-4 group-hover:scale-110 transition-transform">
-                                    <Search className="w-6 h-6" />
-                                </div>
-                                <h3 className="text-lg font-bold text-white mb-2">SEO</h3>
-                                <p className="text-slate-400 text-sm">Search Engine Optimization.</p>
+                                <h3 className="text-lg font-bold text-white mb-2">Hands-on Practice</h3>
+                                <p className="text-slate-400 text-sm">Minimizing theory for practical application.</p>
                             </motion.div>
 
                             <motion.div variants={fadeIn} className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors group">
                                 <div className="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center text-emerald-400 mb-4 group-hover:scale-110 transition-transform">
-                                    <Mail className="w-6 h-6" />
+                                    <Calendar className="w-6 h-6" />
                                 </div>
-                                <h3 className="text-lg font-bold text-white mb-2">Email Marketing</h3>
-                                <p className="text-slate-400 text-sm">Targeted Email campaigns.</p>
+                                <h3 className="text-lg font-bold text-white mb-2">Flexible Scheduling</h3>
+                                <p className="text-slate-400 text-sm">Learn with personalized support.</p>
                             </motion.div>
                         </motion.div>
 

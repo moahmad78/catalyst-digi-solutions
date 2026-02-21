@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
                     <h3>3. Data Security</h3>
                     <p>
                         We implement strict security measures to ensure the safety of your personal information.
-                        For our <strong>Record Management</strong> and <strong>Data Management</strong> clients, we utilize industry-standard encryption and secure protocols to protect sensitive business data. We do not sell, trade, or rent your personal identification information to others.
+                        For our <strong>Data Management</strong> clients, we utilize industry-standard encryption and secure protocols to protect sensitive business data. We do not sell, trade, or rent your personal identification information to others.
                     </p>
 
                     <h3>4. Third-Party Services</h3>

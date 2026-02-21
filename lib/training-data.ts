@@ -21,6 +21,30 @@ export interface TrainingProgram {
 
 export const trainingPrograms: TrainingProgram[] = [
     {
+        id: "virtual-office-trainings",
+        title: "Virtual Office Trainings",
+        description: "Equip yourself with the essential tools for the modern remote workplace. Master communication, project management, and productivity suites.",
+        duration: "1 - 2 Months",
+        icon: Briefcase,
+        color: "text-green-500",
+        heroImage: "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2670&auto=format&fit=crop",
+        modules: [
+            { title: "Professional Communication", desc: "Email etiquette, Slack/Teams mastery, Video conferencing" },
+            { title: "Office Suites", desc: "Advanced Excel, Google Workspace, PowerPoint presentations" },
+            { title: "Project Management", desc: "Trello, Asana, Jira basics for task tracking" },
+            { title: "Remote Productivity", desc: "Time management, Deep work techniques, Digital organization" },
+            { title: "Cloud Collaboration", desc: "File sharing, Version control awareness, Security basics" },
+            { title: "Client Interaction", desc: "Handling requirements, Professional reporting, feedback loops" }
+        ],
+        stack: [
+            { name: "Office", icon: Layout },
+            { name: "Communication", icon: MessageSquare },
+            { name: "Email", icon: Mail },
+            { name: "Remote", icon: Smartphone }
+        ],
+        internshipFocus: "Support real administrative tasks, manage project boards, and facilitate team operations."
+    },
+    {
         id: "software-training",
         title: "Software Training",
         description: "Master Full Stack Development with React, Next.js, Node.js, and Modern Web Architecture. Build scalable applications from scratch.",
@@ -46,7 +70,7 @@ export const trainingPrograms: TrainingProgram[] = [
     },
     {
         id: "digital-marketing",
-        title: "Digital Marketing",
+        title: "Digital Marketing Training",
         description: "Become a complete Digital Marketer. Learn SEO, Social Media Strategy, Paid Ads, and Content Marketing to drive real business growth.",
         duration: "3 Months",
         icon: Share2,
@@ -67,29 +91,5 @@ export const trainingPrograms: TrainingProgram[] = [
             { name: "Analytics", icon: Layout }
         ],
         internshipFocus: "Manage live ad campaigns, optimize SEO for client websites, and execute content strategies."
-    },
-    {
-        id: "virtual-office-trainings",
-        title: "Virtual Office Trainings",
-        description: "Equip yourself with the essential tools for the modern remote workplace. Master communication, project management, and productivity suites.",
-        duration: "1 - 2 Months",
-        icon: Briefcase,
-        color: "text-green-500",
-        heroImage: "https://images.unsplash.com/photo-1593642632823-8f78536788c6?q=80&w=2670&auto=format&fit=crop",
-        modules: [
-            { title: "Professional Communication", desc: "Email etiquette, Slack/Teams mastery, Video conferencing" },
-            { title: "Office Suites", desc: "Advanced Excel, Google Workspace, PowerPoint presentations" },
-            { title: "Project Management", desc: "Trello, Asana, Jira basics for task tracking" },
-            { title: "Remote Productivity", desc: "Time management, Deep work techniques, Digital organization" },
-            { title: "Cloud Collaboration", desc: "File sharing, Version control awareness, Security basics" },
-            { title: "Client Interaction", desc: "Handling requirements, Professional reporting, feedback loops" }
-        ],
-        stack: [
-            { name: "Office", icon: Layout },
-            { name: "Communication", icon: MessageSquare },
-            { name: "Email", icon: Mail },
-            { name: "Remote", icon: Smartphone }
-        ],
-        internshipFocus: "Support real administrative tasks, manage project boards, and facilitate team operations."
     }
 ];
